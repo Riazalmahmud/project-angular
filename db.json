@@ -1,6 +1,51 @@
 {
-  "product": [
-   
+  
+  "Featured": [
+    {
+      "Hollywood": [
+        {
+          "id": 1,
+          "name": "Hollywood",
+          "time": 20,
+          "amount": 20
+        },
+        {
+          "id": 1,
+          "name": "Hot Waxing",
+          "time": 20,
+          "amount": 20
+        }
+      ],
+      "Under Arms": [
+        {
+          "id": 1,
+          "name": "Strip Waxing",
+          "time": 20,
+          "amount": 20
+        },
+        {
+          "id": 1,
+          "name": "Strip Waxing",
+          "time": 20,
+          "amount": 20
+        }
+      ],
+      "Wash and Cut": [
+        {
+          "id": 1,
+          "name": "Wash and Cut",
+          "time": 20,
+          "amount": 20
+        },
+        {
+          "id": 1,
+          "name": "Wash and Cut",
+          "time": 20,
+          "amount": 20
+        }
+      ]
+    }
+
   ],
   "comments": [
     {

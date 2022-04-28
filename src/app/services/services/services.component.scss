@@ -1,0 +1,120 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  width: 70%;
+  margin: 30px auto 0px auto;
+  font-size: 32px;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  text-overflow: ellipsis;
+}
+
+.select-service {
+  background-color: #f2f2f7;
+}
+.select-service-grid {
+  width: 70%;
+  margin: 30px auto 0px auto;
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+}
+.service-product {
+  margin: -68px 19px;
+}
+.service-nav {
+  background: rgb(254, 253, 253);
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.product-future.product-future-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  padding: 1px;
+  border: 1px solid #bfb1b1;
+  text-align: center;
+}
+
+.product-name {
+  margin-left: -129px;
+}
+.product-name h4 {
+  color: rgb(16, 25, 40);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 0px;
+  margin-top: 16px;
+}
+
+.curren-symble {
+  font-size: 17px;
+  font-weight: 700;
+  color: rgb(16, 25, 40);
+  margin-top: 16px;
+}
+.service-card {
+  background: rgb(254, 253, 253);
+  margin: -67px 48px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  align-items: flex-start;
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+
+.card-design {
+}
+
+img.mat-card-image {
+  margin: -43px 91px 29px;
+  width: 76px;
+  height: 80px;
+  border: 3px solid #ffffff;
+  border-radius: 9px;
+}
+.card-design h5 {
+  font-size: 17px;
+  color: rgb(16, 25, 40);
+}
+.card-design h5 {
+  text-align: center;
+}
+.card-design p {
+  text-align: center;
+  color: rgb(135, 140, 147);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.product-info {
+  margin: 30px 0px;
+}
+.product-info p {
+  color: rgb(135, 140, 147);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+}
+.card-total-ammount {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-around;
+}
+
+.product-future {
+  margin-top: 20px;
+}
+.mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}

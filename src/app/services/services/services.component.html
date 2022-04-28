@@ -1,0 +1,112 @@
+<mat-toolbar style="background-color: #101928; height: 135px">
+  <mat-toolbar-row>
+    <span>Selec Services </span>
+    <span class="example-spacer"></span>
+    <mat-icon aria-hidden="false" aria-label="Example home icon"
+      >clear</mat-icon
+    >
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<ng-container class="select-service">
+  <div class="select-service-grid">
+    <div class="service-product">
+      <div class="service-nav">
+        <div class="tab">
+          <mat-tab-group mat-align-tabs="start">
+            <mat-tab label="Featured"> </mat-tab>
+            <mat-tab label="Hair Colouring"></mat-tab>
+            <mat-tab label="Hair Colouring Package"> </mat-tab>
+            <!-- <mat-tab label="Third">Hair Colouring Package </mat-tab>
+  <mat-tab label="Third">Hair Blowdry </mat-tab>
+  <mat-tab label="Third">Hair Treatments</mat-tab>
+  <mat-tab label="Third">Hair - Gents</mat-tab>
+  <mat-tab label="Third">Body Waxing - Ladies</mat-tab>
+  <mat-tab label="Third">Facials</mat-tab> -->
+          </mat-tab-group>
+        </div>
+      </div>
+
+      <div class="product-future">
+        <mat-accordion>
+          <mat-expansion-panel hideToggle>
+
+
+
+
+            <mat-expansion-panel-header collapsedHeight="100px">
+              <mat-panel-title>
+                <mat-icon
+                  class="product-future-icon"
+                  style="
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 100%;
+                    padding: 1px;
+                    border: 1px solid #bfb1b1;
+                    text-align: center;
+                  "
+                  >more_horiz</mat-icon
+                >
+              </mat-panel-title>
+              <mat-panel-description>
+                <div class="product-name">
+                  <h4>Hollywood</h4>
+                  <p>time</p>
+                </div>
+              </mat-panel-description>
+
+              <div class="curren-symble">
+                <h4>from</h4>
+                <p>£</p>
+              </div>
+            </mat-expansion-panel-header>
+
+            <label id="example-radio-group-label"
+              >Pick your favorite season</label
+            >
+            <mat-radio-group
+              aria-labelledby="example-radio-group-label"
+              class="example-radio-group"
+              [(ngModel)]="favoriteSeason"
+            >
+            
+              <mat-radio-button mat-icon
+                class="example-radio-button"
+                *ngFor="let season of seasons"
+                [value]="season"
+              >
+              
+                {{ season }}
+              </mat-radio-button>
+              <!-- <mat-icon aria-hidden="false" aria-label="Example check icon" *ngFor="let season of seasons" value={season}>check_circle_outline</mat-icon> -->
+            </mat-radio-group>
+            <div>Your favorite season is: {{ favoriteSeason }}</div>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-card-info">
+        <img
+          mat-card-image
+          src="https://images.fresha.com/locations/location-profile-images/19810/441332/df83c909-e9b8-48de-831e-5289f2c744f3.jpg?class=thumb"
+          alt="downloadimage"
+        />
+        <div class="card-design">
+          <h5>Sajna Hair & Beauty Tooting</h5>
+          <p>234A Upper Tooting Road, London (Tooting), England</p>
+        </div>
+        <hr />
+        <div class="product-info">
+          <p>No services selected yet</p>
+        </div>
+        <hr />
+        <div class="card-total-ammount">
+          <h4>Total</h4>
+          <h4>Free</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
