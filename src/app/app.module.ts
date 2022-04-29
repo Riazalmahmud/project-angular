@@ -14,8 +14,10 @@ import { MatRadioModule } from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductApiService } from './apiService/product-api.service';
+import { CartApiService } from './cartApi/cart-api.service';
+import { CartComponent } from './services/cart/cart.component';
 @NgModule({
-  declarations: [AppComponent, ServicesComponent],
+  declarations: [AppComponent, ServicesComponent, CartComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -31,7 +33,7 @@ import { ProductApiService } from './apiService/product-api.service';
     HttpClientModule
   ],
   providers: [
-    ProductApiService
+    ProductApiService,CartApiService
   ],
   bootstrap: [AppComponent],
 })
