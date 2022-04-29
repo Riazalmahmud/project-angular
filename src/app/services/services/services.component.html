@@ -28,13 +28,13 @@
       </div>
 
       <div class="product-future">
-        <mat-accordion>
+        <mat-accordion *ngFor="let product of products">
           <mat-expansion-panel hideToggle>
 
 
 
 
-            <mat-expansion-panel-header collapsedHeight="100px">
+            <mat-expansion-panel-header collapsedHeight="100px" >
               <mat-panel-title>
                 <mat-icon
                   class="product-future-icon"
@@ -51,20 +51,16 @@
               </mat-panel-title>
               <mat-panel-description>
                 <div class="product-name">
-                  <h4>Hollywood</h4>
-                  <p>time</p>
+                  <h4>{{product.name}}</h4>
+                  <p>{{product.time}} min</p>
                 </div>
               </mat-panel-description>
 
               <div class="curren-symble">
                 <h4>from</h4>
-                <p>£</p>
+                <p>£ {{product.amount}}</p>
               </div>
             </mat-expansion-panel-header>
-
-            <label id="example-radio-group-label"
-              >Pick your favorite season</label
-            >
             <mat-radio-group
               aria-labelledby="example-radio-group-label"
               class="example-radio-group"
@@ -73,15 +69,13 @@
             
               <mat-radio-button mat-icon
                 class="example-radio-button"
-                *ngFor="let season of seasons"
-                [value]="season"
+               
               >
-              
-                {{ season }}
+                {{ product.name }}
               </mat-radio-button>
               <!-- <mat-icon aria-hidden="false" aria-label="Example check icon" *ngFor="let season of seasons" value={season}>check_circle_outline</mat-icon> -->
             </mat-radio-group>
-            <div>Your favorite season is: {{ favoriteSeason }}</div>
+            
           </mat-expansion-panel>
         </mat-accordion>
       </div>

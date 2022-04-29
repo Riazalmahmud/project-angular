@@ -10,6 +10,6 @@ export class ProductApiService {
   constructor(private http: HttpClient) { }
 
   getProdut(): Observable<any>{
-    return this.http.get('https://jsonplaceholder.typicode.com/users');
+    return this.http.get('http://localhost:3000/comments');
   }
 }

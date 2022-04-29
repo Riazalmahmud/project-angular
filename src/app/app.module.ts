@@ -13,6 +13,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatRadioModule } from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductApiService } from './apiService/product-api.service';
 @NgModule({
   declarations: [AppComponent, ServicesComponent],
   imports: [
@@ -29,7 +30,9 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ProductApiService
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
