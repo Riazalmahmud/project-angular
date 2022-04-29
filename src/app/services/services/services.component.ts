@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { catchError, tap } from 'rxjs';
+import {  tap } from 'rxjs';
 import { ProductApiService } from 'src/app/apiService/product-api.service';
+import { CartApiService } from 'src/app/cartApi/cart-api.service';
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
@@ -12,7 +13,10 @@ export class ServicesComponent implements OnInit {
   loading = true;
   favoriteSeason!: string;
   seasons: string[] = ['Winter', 'Spring', 'Summer', 'Autumn'];
-  constructor(private apiservice: ProductApiService,) {}
+  constructor(
+    private apiservice: ProductApiService,
+    private cart: CartApiService
+  ) {}
 
   ngOnInit(): void {
     this.apiservice.getProdut().subscribe((products: any) => {
@@ -22,5 +26,9 @@ export class ServicesComponent implements OnInit {
         Object.assign(a, { quantity: 1, total: a.price });
       });
     });
+  }
+
+  addToCart(product: any) {
+    this.cart.addToCart(product);
   }
 }

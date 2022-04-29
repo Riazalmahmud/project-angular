@@ -22,6 +22,7 @@ export class CartApiService {
     this.cartDataList.push(product);
     this.productList.next(this.cartDataList);
     this.getTotalAmmount();
+    console.log(this.cartDataList)
   }
 
   getTotalAmmount() {
