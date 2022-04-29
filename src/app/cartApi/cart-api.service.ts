@@ -25,11 +25,14 @@ export class CartApiService {
     console.log(this.cartDataList)
   }
 
-  getTotalAmmount() {
+  getTotalAmmount():number {
     let gradTotal = 0;
     this.cartDataList.map((a: any) => {
+      console.log(a, 'this grandTOotall');
       gradTotal += a.total;
+      // console.log(gradTotal, "this grandTOotall")
     });
+    return gradTotal;
   }
 
   removeAllData() {

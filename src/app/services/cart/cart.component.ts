@@ -15,6 +15,7 @@ export class CartComponent implements OnInit {
     this.cartApi.getProdutList().subscribe(res => {
       this.products = res;
       this.allProduct = this.cartApi.getTotalAmmount();
+      console.log(this.allProduct)
     })
   }
 
