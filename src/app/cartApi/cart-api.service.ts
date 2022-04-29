@@ -32,8 +32,17 @@ export class CartApiService {
     });
   }
 
-  removeData() {
+  removeAllData() {
     this.cartDataList = [];
     this.productList.next(this.cartDataList);
+  }
+
+  removeCartData(product: any) {
+    this.cartDataList.map((a: any, index: any) => {
+      
+      if (product.id === a.id) {
+        this.cartDataList.splice(index,1)
+      }
+    })
   }
 }
