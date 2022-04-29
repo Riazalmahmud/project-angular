@@ -18,8 +18,8 @@ export class CartComponent implements OnInit {
     })
   }
 
-  removeProduct(product:any) {
-    this.cartApi.removeCartData(product);
+  removeProduct(products:any) {
+    this.cartApi.removeCartData(products);
   }
   removeallProduct() {
   this.cartApi.removeAllData()

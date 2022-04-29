@@ -5,18 +5,18 @@
           src="https://images.fresha.com/locations/location-profile-images/19810/441332/df83c909-e9b8-48de-831e-5289f2c744f3.jpg?class=thumb"
           alt="downloadimage"
         />
-        <div class="card-design" *ngFor="let product of products">
-          <h5>Sajna Hair & Beauty Tooting</h5>
+        <div class="card-design">
+          <h5>Sajna Hair & Beauty Tooting : </h5>
           <p>234A Upper Tooting Road, London (Tooting), England</p>
         </div>
         <hr />
-        <div class="product-info">
+        <div class="product-info" *ngFor="let product of products">
           <!-- <p>No services selected yet</p> -->
           <div class="product-title">
-            <!-- <p>{{product.name}}</p> -->
+            <p>{{product.name}}</p>
           </div>
           <div class="product-price">
-            <!-- <p>₤ {{}}</p> -->
+            <p>₤ {{product.amount}}</p>
           </div>
         </div>
         <hr />
