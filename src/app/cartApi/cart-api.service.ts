@@ -22,17 +22,13 @@ export class CartApiService {
     this.cartDataList.push(product);
     this.productList.next(this.cartDataList);
     this.getTotalAmmount();
-    console.log(this.cartDataList)
   }
-
   getTotalAmmount():number {
-    let gradTotal = 0;
+    let grandTotal = 0;
     this.cartDataList.map((a: any) => {
-      console.log(a, 'this grandTOotall');
-      gradTotal += a.total;
-      // console.log(gradTotal, "this grandTOotall")
-    });
-    return gradTotal;
+      grandTotal += a.total;
+    })
+    return grandTotal;
   }
 
   removeAllData() {
@@ -42,7 +38,6 @@ export class CartApiService {
 
   removeCartData(product: any) {
     this.cartDataList.map((a: any, index: any) => {
-      
       if (product.id === a.id) {
         this.cartDataList.splice(index,1)
       }
